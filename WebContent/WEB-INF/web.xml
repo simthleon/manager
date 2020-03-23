@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>StudentInfoManage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>manage.web.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>ClassServlet</servlet-name>
+     <servlet-class>manage.web.ClassListServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>ClassDeleteServlet</servlet-name>
+     <servlet-class>manage.web.ClassDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>ClassSaveServlet</servlet-name>
+     <servlet-class>manage.web.ClassSaveServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+     <servlet-name>StudentServlet</servlet-name>
+     <servlet-class>manage.web.StudentListServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>ClassComboServlet</servlet-name>
+     <servlet-class>manage.web.ClassComboListServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>StudentdeleteServlet</servlet-name>
+     <servlet-class>manage.web.StudentDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+     <servlet-name>StudentSaveServlet</servlet-name>
+     <servlet-class>manage.web.StudentSaveServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>ClassServlet</servlet-name>
+     <url-pattern>/classlist</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+     <servlet-name>ClassDeleteServlet</servlet-name>
+     <url-pattern>/classDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>ClassSaveServlet</servlet-name>
+     <url-pattern>/classSave</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+     <servlet-name>StudentServlet</servlet-name>
+     <url-pattern>/studentlist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>ClassComboServlet</servlet-name>
+     <url-pattern>/combolist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>StudentdeleteServlet</servlet-name>
+     <url-pattern>/studentdelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+     <servlet-name>StudentSaveServlet</servlet-name>
+     <url-pattern>/studentSave</url-pattern>
+  </servlet-mapping>
+</web-app>
